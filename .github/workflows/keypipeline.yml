@@ -43,7 +43,7 @@ jobs:
            
     - name: Run Ansible Playbook
       run: |
-        ansible-playbook keypair.yaml
+        ansible-playbook keypair.yml
 
 
 
