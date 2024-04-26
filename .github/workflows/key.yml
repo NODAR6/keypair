@@ -3,7 +3,7 @@
   connection: local
   become: false
   tasks:
-  - name: create key pair using provided key_material
-    amazon.aws.ec2_key:
-      name: ansible-key
-      key_material: 'ssh-rsa AAAAxyz...== me@example.com'
+    - name: create key pair using provided key_material
+      amazon.aws.ec2_key:
+        name: ansible-key
+        key_material: 'ssh-rsa AAAAxyz...== me@example.com'
